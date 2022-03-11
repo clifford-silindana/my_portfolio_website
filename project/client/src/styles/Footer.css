@@ -1,0 +1,27 @@
+.footer-section {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 10vh;
+  min-height: 70vh;
+  background: rgba(36, 34, 34, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  background: url("../images/footerbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-header {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  height: 20%;
+}
+
+.footer-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2em;
+}

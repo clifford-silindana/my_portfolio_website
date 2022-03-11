@@ -1,0 +1,25 @@
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.contact-image {
+  width: 15vw;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+}
+
+.contact-link-img {
+  width: 40px;
+  margin-bottom: 0.5em;
+  list-style-type: none;
+}
+
+.contact-link:hover {
+  background: grey;
+}
+
+.contact-links {
+  list-style-type: none;
+}

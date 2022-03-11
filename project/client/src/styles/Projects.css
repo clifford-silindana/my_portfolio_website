@@ -1,0 +1,21 @@
+.projects-section {
+  height: 70vh;
+  margin-top: 2em;
+  position: relative;
+}
+
+.projects-section-heading {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  height: 20%;
+}
+
+.projects-carousel {
+  width: 100%;
+  background-position: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
