@@ -16,6 +16,7 @@
   position: absolute;
   top: 15%;
   left: 5%;
+  height: auto;
 }
 
 .hero-text-heading {
@@ -25,4 +26,10 @@
 .hero-text-para {
   font-weight: bold;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 480px) {
+  .hero-text {
+    height: auto;
+  }
 }

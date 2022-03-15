@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Footer.css";
 import Contact from "./Contact";
-import Form from "../components/Form";
+import ContactForm from "./ContactForm";
 import footerbg from "../images/footerbg.jpg";
 
 
@@ -13,7 +13,7 @@ function Footer()
             <h1 className = "footer-header">Contact Me</h1>
             <div className = "footer-body">
                 <Contact />
-                <Form />
+                <ContactForm />
             </div>
            
             

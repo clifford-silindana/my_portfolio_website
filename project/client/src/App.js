@@ -1,8 +1,8 @@
 import Navigation from "./components/Navigation";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Articles from "./components/Articles";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import ViewProjects from "./pages/ViewProjects";
+import ViewArticles from "./pages/ViewArticles";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 //import "bootstrap/dist/css/bootstrap.css";
 import "./styles/App.css";
 
@@ -10,11 +10,22 @@ import "./styles/App.css";
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
+
         <Navigation />
-        <Hero />
-        <Projects />
-        <Articles/>
-        <Footer />
+
+        <Routes>
+
+          <Route path = "/home" element = {<Home />}/>
+      
+          <Route path = "/articles" element = {<ViewArticles />}/>
+              
+          <Route path = "/projects" element = {<ViewProjects />}/>
+
+        </Routes>
+
+      </BrowserRouter>
+        
     </div>
   );
 }

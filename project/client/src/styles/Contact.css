@@ -23,3 +23,14 @@
 .contact-links {
   list-style-type: none;
 }
+
+@media only screen and (max-width: 480px) {
+  .contact-image {
+    width: 150px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+}
