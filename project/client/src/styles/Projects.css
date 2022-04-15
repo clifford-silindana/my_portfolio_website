@@ -1,21 +1,26 @@
-.projects-section {
-  height: 70vh;
-  margin-top: 2em;
-  position: relative;
-}
-
-.projects-section-heading {
-  text-align: center;
-  font-weight: bold;
-  color: white;
-  height: 20%;
-}
-
-.projects-carousel {
+#projects-section {
   width: 100%;
-  background-position: cover;
+  height: 75vh;
+  margin-top: 10%;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.carousel-inner {
+  width: 100%;
+  position: relative;
+}
+
+.carousel-item{
+  position: relative;
+  width : 80%;
+}
+
+.carousel.slide {
+  position: absolute;
+  top: 15%;
+}
+
+.projects-header {
+  text-align : center;
+  color : white;
 }

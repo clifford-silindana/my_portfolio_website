@@ -15,10 +15,9 @@ function Contact()
             <img className = "contact-image"src={profile} alt="profile picture"></img>
             
             <ul className = "contact-links">
-                <li className="contact-links-item"><a className="contact-link" href="https://www.linkedin.com/in/clifford-silindana-06937b121/"><img className="contact-link-img" src={github}alt="linkedin"/></a></li>
-                <li className="contact-link-item"><a className="contact-link" href="#"><img className="contact-link-img" src={linkedin}alt="twitter"/></a></li>
-                <li className="contact-link-item"><a className="contact-link" href="#"><img className="contact-link-img" src={twitter}alt="linkedin"/></a></li>
-                <li className="contact-link-item"><a className="contact-link" href="https://github.com/clifford-silindana"><img className="contact-link-img" src={email}alt="linkedin"/></a></li>
+                <li className="contact-links-item"><a className="contact-link" href="https://www.linkedin.com/in/clifford-silindana-06937b121/"><img className="contact-link-img" src={linkedin}alt="linkedin" target = "_blank"/></a></li>
+                <li className="contact-link-item"><a className="contact-link" href="https://github.com/clifford-silindana"><img className="contact-link-img" src={github}alt="twitter" target = "_blank"/></a></li>
+                <li className="contact-link-item"><a className="contact-link" href="https://twitter.com/The_Clifford_"><img className="contact-link-img" src={twitter}alt="linkedin" target = "_blank"/></a></li>
             </ul>
         </div>
     );

@@ -6,6 +6,16 @@
   font-weight: bold;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  position : relative;
+
+}
+
+
 body {
   background: black;
   max-width: 100vw;
@@ -28,3 +38,47 @@ body {
   width: 200px;
   height: 200px;
 }
+
+
+.video-section {
+  width : 100%;
+  height : 75vh;
+  
+}
+
+.loading-message {
+  text-align : center;
+}
+
+.project-description {
+  text-align : center;
+}
+
+.project-build {
+  text-align : center;
+}
+
+.article-body {
+  margin-top : 50px;
+  font-size : 20px;
+  font-weight :100;
+}
+
+.web2project {
+  margin-top : 50px;
+}
+
+
+.web2project:hover {
+  background : lightskyblue;
+}
+/*------- INNER PAGE STYLING ---------*/
+
+.body-section {
+  position : absolute;
+  width : 100%;
+  top : 120px;
+  
+}
+
+

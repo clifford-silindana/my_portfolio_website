@@ -3,6 +3,7 @@
   height: 65vh;
   position: relative;
   border-radius: 10px;
+
 }
 
 .hero-image {
@@ -10,13 +11,16 @@
   height: 100%;
   object-fit: cover;
   object-position: top;
+  opacity: 0.7;
 }
 
 .hero-text {
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 5%;
   height: auto;
+  color: white;
+  overflow : none;
 }
 
 .hero-text-heading {
@@ -28,8 +32,15 @@
   font-size: 18px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   .hero-text {
     height: auto;
+  }
+
+  .fields-of-interests {
+    display : flex;
+    justify-content : space-between;
+    margin-right : 10px;
+
   }
 }

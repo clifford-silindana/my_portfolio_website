@@ -1,28 +1,84 @@
-.articles {
-  height: 70vh;
-  margin-top: 2em;
+* {
+  color : white;
+}
+
+#articles-carousel-container {
+  width: 100%;
+  height: 75vh;
+  margin-top: 5px;
   position: relative;
 }
 
-.articles-header {
-  text-align: center;
-  height: 20%;
-  font-weight: bold;
-  color: white;
+.carousel-inner {
+  position: relative;
 }
 
 .carousel-item {
-  margin-left: 45%;
-  margin-bottom: 5vh;
+  position : absolute;
+  left : 25%;
+  width : 40%;
+  height : 50%;
+  border-radius : 10px;
 }
 
-.article-thumbnail-cover {
-  width: 30vh;
-  height: 30vh;
+.carousel-inner > img {
+  position: absolute;
+  object-fit : cover;
+
+}
+.article-type-1 {
+  font-size : 30px;
+  margin-left : 12%;
 }
 
-.article-thumbnail {
+.article-type-2 {
+  font-size : 30px;
+  margin-left : 20%;
+}
+
+.article-type-3 {
+  font-size : 30px;
+  margin-left : 18%;
+}
+
+.article-linkd {
+  text-decoration : none;
+  margin-top : 50px;
+}
+
+.article-linkd:hover {
+  background : lightskyblue;
+}
+
+
+
+
+.carousel.slide {
+  position: absolute;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  top: 25%;
 }
+
+
+.articles-header {
+  text-align : center;
+  color : white;
+}
+
+@media(max-width : 500px) {
+  .article-type-1 {
+    font-size : 20px;
+    margin-left : -2%;
+  }
+  
+  .article-type-2 {
+    font-size : 20px;
+    margin-left : 15%;
+  }
+  
+  .article-type-3 {
+    font-size : 20px;
+    margin-left : 10%;
+  }
+}
+

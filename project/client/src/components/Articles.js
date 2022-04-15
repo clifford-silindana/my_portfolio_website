@@ -1,65 +1,53 @@
 import React from "react";
 import "../styles/Articles.css";
-import the_clifford from "../images/the_clifford_bg.jpg";
-import profile from "../images/profile.jpg";
-import AMG from "../images/AMG.jpg";
+
+import { Link } from "react-router-dom";
+//picture imports
+import SoftwareDevelopment from "../images/SoftwareDevelopment.jpg";
+import business from "../images/Business.jpg";
+import Investments from "../images/invest.jpg";
+import Footer from "../images/footerbg.jpg";
 
 function Articles()
 {
     return(
-        <div className = "articles" id = "articles">
+        <div id = "articles-carousel-container">
             <h1 className = "articles-header">My articles</h1>
-            <div className = "artciles-section">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div className = "article-thumbnail-cover">
-                            <img className = "article-thumbnail" src= {the_clifford} alt="" />
-                        </div>
-                        <div className = "article-description">
-                            <h1>Business</h1>
-                            <p>The world of business</p>
-                        </div>
-                    
-                    </div>
-                    <div class="carousel-item">
-                        <div className = "article-thumbnail-cover">
-                            <img className = "article-thumbnail" src= {profile} alt="" />
-                        </div>
-                        <div className = "article-description">
-                            <h1>Business</h1>
-                            <p>The world of business</p>
-                        </div>
-                    
-                    </div>
-                    <div class="carousel-item">
-                        <div className = "article-thumbnail-cover">
-                            <img className = "article-thumbnail" src = {AMG} alt="" />
-                        </div>
-                        <div className = "article-description">
-                            <h1>Business</h1>
-                            <p>The world of business</p>
-                        </div>
-                    
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="2000">
+      <Link className = "article-link" to = "/articles/software-development">
+      <img src= {SoftwareDevelopment} class="d-block w-50" alt="..."/>
+      
+      </Link>
+      <p className = "article-type-1">Software Development</p>
     </div>
+  
+    <div class="carousel-item" data-bs-interval="2000">
+      <Link className = "article-link" to = "/articles/business">
+      <img src= {business} class="d-block w-50" alt="..."/>
+      </Link>
+      <p className = "article-type-2">Business</p>
+    </div>
+    
+    <div class="carousel-item" data-bs-interval="2000">
+      <Link className = "article-link" to = "/articles/investments">
+      <img src= {Investments} class="d-block w-50" alt="..."/>
+      </Link>
+      <p className = "article-type-3">Investments</p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  
+        </div>
     );
 }
 
